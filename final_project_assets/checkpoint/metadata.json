@@ -1,0 +1,28 @@
+{
+  "model": "CnnMlpFaultIsolation",
+  "architecture": "9x500 -> Conv(64,128,256) -> MLP(128) -> 5",
+  "signals": [
+    "res_vx",
+    "res_vy",
+    "res_r",
+    "res_slip_fl",
+    "res_slip_fr",
+    "res_slip_rl",
+    "res_slip_rr",
+    "res_ax",
+    "res_ay"
+  ],
+  "num_classes": 5,
+  "batch_size": 256,
+  "lr": 0.003,
+  "early_stopping_patience": 80,
+  "test_accuracy": 0.9523929895517358,
+  "test_macro_f1": 0.918233219346088,
+  "test_per_class_f1": {
+    "Normal": 1.0,
+    "bc_FL": 0.9024,
+    "bc_FR": 0.8904,
+    "bc_RL": 0.9113,
+    "bc_RR": 0.887
+  }
+}

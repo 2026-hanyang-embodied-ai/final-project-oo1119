@@ -1,0 +1,37 @@
+__pycache__/
+*.py[cod]
+*.pth
+*.pt
+*.h5
+*.pkl
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+wandb/
+outputs/
+dataset/
+data/sample/
+tests/*
+data
+
+# Keep the final-project notebook runnable from a lightweight submission.
+!final_project_assets/
+!final_project_assets/checkpoint/
+!final_project_assets/checkpoint/model.pt
+!final_project_assets/checkpoint/norm.pt
+!final_project_assets/checkpoint/metadata.json
+!final_project_assets/sample_data/
+!final_project_assets/sample_data/*.mat
+!final_project_assets/README.md
+
+# Keep the production CNN run checkpoint (weights only, not the test_dataset).
+!outputs/
+outputs/*
+!outputs/cnn_run_20260618_125218_seed0/
+outputs/cnn_run_20260618_125218_seed0/*
+!outputs/cnn_run_20260618_125218_seed0/model.pt
+!outputs/cnn_run_20260618_125218_seed0/model_scripted.pt
+!outputs/cnn_run_20260618_125218_seed0/norm.pt
+!outputs/cnn_run_20260618_125218_seed0/metadata.json
